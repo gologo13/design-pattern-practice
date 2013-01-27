@@ -13,6 +13,10 @@ private:
      * Constructor
      */
     Config();
+    /**
+     * Copy Constructor
+     */
+    Config(const Config&);
 
 public:
     /**

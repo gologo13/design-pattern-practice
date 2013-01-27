@@ -4,6 +4,10 @@ Config::Config()
 {
 }
 
+Config::Config(const Config&)
+{
+}
+
 Config::~Config()
 {
 }
