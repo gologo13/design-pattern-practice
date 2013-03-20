@@ -1,4 +1,12 @@
-design-patterns
+Design Pattern Practice
 ===============
 
-design patterns
+* Implemented
+
+- Singleton Pattern
+- Observer Pattern
+    - TODO: UML, Subject Interface Class
+
+* To be implemented
+
+- Builder Pattern
