@@ -2,31 +2,31 @@
 #include <map>
 #pragma once
 
-class Config
+class SharedConfig
 {
     typedef std::map<std::string, int> Dict;
-    static Config* _instance;
+    static SharedConfig* _instance;
     Dict _store;
 
 private:
     /**
      * Constructor
      */
-    Config();
+    SharedConfig();
     /**
      * Copy Constructor
      */
-    Config(const Config&);
+    SharedConfig(const SharedConfig&);
 
 public:
     /**
      * get the instance
      */
-    static Config* getInstance();
+    static SharedConfig* getInstance();
     /**
      * Destructor
      */
-    ~Config();
+    ~SharedConfig();
     /**
      * set a value
      */

@@ -1,28 +1,28 @@
 #include "singleton.h"
 
-Config::Config()
+SharedConfig::SharedConfig()
 {
 }
 
-Config::Config(const Config&)
+SharedConfig::SharedConfig(const SharedConfig&)
 {
 }
 
-Config::~Config()
+SharedConfig::~SharedConfig()
 {
 }
 
-Config* Config::getInstance()
+SharedConfig* SharedConfig::getInstance()
 {
     return _instance;
 }
 
-void Config::set(const std::string& key, int value)
+void SharedConfig::set(const std::string& key, int value)
 {
     _store[key] = value;
 }
 
-int Config::get(const std::string& key)
+int SharedConfig::get(const std::string& key)
 {
     Dict::const_iterator it = _store.find(key);
     if (it != _store.end()) {
@@ -32,4 +32,4 @@ int Config::get(const std::string& key)
     }
 }
 
-Config* Config::_instance = new Config();
+SharedConfig* SharedConfig::_instance = new SharedConfig();
