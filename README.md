@@ -6,6 +6,7 @@ Design Pattern Practice
 - Singleton Pattern
 - Observer Pattern
     - TODO: UML, Subject Interface Class
+- Template Method Pattern
 - MVC
 
 ## To be implemented
